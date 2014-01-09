@@ -10,6 +10,7 @@ angular.module("nsnTable", [])
 //                title: "accessor" // recebe o do seu pai, com o msm nome title...
             },
             controller: ['$scope', '$http', function ($scope, $http) {
+                var max = 0;
                 $http({method: 'GET', url: $scope.filejson}).
                     success(function (data) {
                         $scope.columnsNames = data.columns;
@@ -18,6 +19,7 @@ angular.module("nsnTable", [])
                             $scope.auxColumnsNames[i] = data.columns[i + 1];
                         }
                         $scope.rowsValues = data.data;
+                        max = $scope.rowsValues.length;
                     }).
                     error(function () {
                         console.log("not getting anything...");
@@ -26,32 +28,37 @@ angular.module("nsnTable", [])
                 //caso selected e volta a fazer click deslecionar... TODO
                 $scope.idSelectedRow = null;
 
-                $scope.selectedRows = [];
                 $scope.setSelectedRow = function (idSelectedRow, $index) {
                     $scope.idSelectedRow = idSelectedRow;
 
-                    console.log('$index' + $index)
-                    console.log($scope.rowsValues[$index])
-                    if ($scope.selectedRows[$index] == true) {
-                        $scope.selectedRows[$index] = false;
+                    if ($scope.rowsValues[$index].isSelected == true) {
+                        $scope.rowsValues[$index].isSelected = false;
                     }
                     else {
-                        $scope.selectedRows[$index] = true;
+                        $scope.rowsValues[$index].isSelected = true;
                     }
-                    console.log($scope.selectedRows)
                 };
 
                 $scope.idSelectedCol = null;
                 $scope.setSelectedCol = function (idSelectedCol) {
                     $scope.idSelectedCol = idSelectedCol;
 
-                    console.log(idSelectedCol)
                     var obj = [];
 
                     for (var i = 0; i < $scope.rowsValues.length; i++) {
                         obj[i] = $scope.rowsValues[i][idSelectedCol];
                     }
-                    console.log('col' + obj)
+                };
+
+                var evenRowColor = "#ffffff";
+                var oddRowColor = "#eeeeee";
+
+                $scope.getRowColor = function ($index) {
+                    if ($index % 2 === 0) {
+                        return evenRowColor;
+                    } else {
+                        return oddRowColor;
+                    }
                 };
 
                 //construir um grafico com base nos dados escolhidos na tabela... TODO
@@ -60,6 +67,8 @@ angular.module("nsnTable", [])
             ],
 //            require: 'ngModel' -- Para o caso de existir interatividade com o utilizador, os dados sao introduzidos por ele, etc...
             link: function linkFn(scope, element, attrs) {
+
+
             }
         };
     });

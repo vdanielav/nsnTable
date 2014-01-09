@@ -1,1 +1,1 @@
-This a directive to create a table.
+This is a directive implemented in AngularJS to create a table.

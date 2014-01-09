@@ -11,7 +11,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr ng-repeat="rowsValue in rowsValues" ng-click="setSelectedRow(rowsValue[columnsNames[0].id], $index)" ng-class="{selected : rowsValue[columnsNames[0].id] === idSelectedRow || selectedRows[$index] == true}">
+                <tr ng-style="{ backgroundColor: getRowColor($index) }" ng-repeat="rowsValue in rowsValues" ng-click="setSelectedRow(rowsValue[columnsNames[0].id], $index)" ng-class="{selected : rowsValues[$index].isSelected == true}">
                     <!--alerts?! how to do that?-->
                     <th ng-click="setSelectedCol(columnsNames[0].id)" ng-class="{selected : columnsNames[0].id === idSelectedCol}" ng-bind="rowsValue[columnsNames[0].id]"></th>
                     <td ng-click="setSelectedCol(auxColumnsName.id)" ng-class="{selected: auxColumnsName.id === idSelectedCol}" ng-repeat="auxColumnsName in auxColumnsNames" ng-bind="rowsValue[auxColumnsName.id]"></td>
