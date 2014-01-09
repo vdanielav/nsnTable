@@ -1,0 +1,150 @@
+<div>
+    <h2>Simple Data Tables</h2>
+    <div class="nsnTable">
+
+        <div class="panel">
+            <table class="data">
+                <thead> <!--{{ columnsName[i].isColSelected }}-->
+                <tr>
+                    <th ng-click="setSelectedCol(columnsName.id)" ng-class="{selected : columnsName.id === idSelectedCol}" ng-bind="columnsName.name" ng-repeat="columnsName in columnsNames"></th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-style="{ backgroundColor: getRowColor($index) }" ng-repeat="rowsValue in rowsValues" ng-click="setSelectedRow(rowsValue[columnsNames[0].id], $index)" ng-class="{selected : rowsValues[$index].isSelected == true}">
+                    <!--alerts?! how to do that?-->
+                    <th ng-click="setSelectedCol(columnsNames[0].id)" ng-class="{selected : columnsNames[0].id === idSelectedCol}" ng-bind="rowsValue[columnsNames[0].id]"></th>
+                    <td ng-click="setSelectedCol(auxColumnsName.id)" ng-class="{selected: auxColumnsName.id === idSelectedCol}" ng-repeat="auxColumnsName in auxColumnsNames" ng-bind="rowsValue[auxColumnsName.id]"></td>
+                </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+
+</div>
+
+        <!--<div class="panel">-->
+            <!--<table class="data striped" ng-controller="TableCtrl">-->
+                <!--<thead>-->
+                <!--<tr>-->
+                    <!--<th>{{ columnsNames[0].name }}</th>-->
+                    <!--<th>{{ columnsNames[1].name }}</th>-->
+                    <!--<th>{{ columnsNames[2].name }}</th>-->
+                    <!--<th>{{ columnsNames[3].name }}</th>-->
+                    <!--<th>{{ columnsNames[4].name }}</th>-->
+                    <!--<th>{{ columnsNames[5].name }}</th>-->
+                    <!--<th>{{ columnsNames[6].name }}</th>-->
+                    <!--<th>{{ columnsNames[7].name }}</th>-->
+                    <!--<th>{{ columnsNames[8].name }}</th>-->
+                <!--</tr>-->
+                <!--</thead>-->
+                <!--<tbody>-->
+                <!--<tr>-->
+                    <!--<th>{{ rowsValues[0].a }}</th>-->
+                    <!--<td>{{ rowsValues[0].b }}</td>-->
+                    <!--<td class="alert">{{ rowsValues[0].c }}</td>-->
+                    <!--<td>{{ rowsValues[0].d }}</td>-->
+                    <!--<td>{{ rowsValues[0].e }}</td>-->
+                    <!--<td>{{ rowsValues[0].f }}</td>-->
+                    <!--<td>{{ rowsValues[0].g }}</td>-->
+                    <!--<td>{{ rowsValues[0].h }}</td>-->
+                    <!--<td>{{ rowsValues[0].i }}</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<th>{{ rowsValues[1].a }}</th>-->
+                    <!--<td>{{ rowsValues[1].b }}</td>-->
+                    <!--<td>{{ rowsValues[1].c }}</td>-->
+                    <!--<td>{{ rowsValues[1].d }}</td>-->
+                    <!--<td>{{ rowsValues[1].e }}</td>-->
+                    <!--<td>{{ rowsValues[1].f }}</td>-->
+                    <!--<td>{{ rowsValues[1].g }}</td>-->
+                    <!--<td class="alert"><a href="#">{{ rowsValues[1].h }}</a></td>-->
+                    <!--<td>{{ rowsValues[1].i }}</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<th>{{ rowsValues[2].a }}</th>-->
+                    <!--<td>{{ rowsValues[2].b }}</td>-->
+                    <!--<td>{{ rowsValues[2].c }}</td>-->
+                    <!--<td>{{ rowsValues[2].d }}</td>-->
+                    <!--<td>{{ rowsValues[2].e }}</td>-->
+                    <!--<td>{{ rowsValues[2].f }}</td>-->
+                    <!--<td>{{ rowsValues[2].g }}</td>-->
+                    <!--<td>{{ rowsValues[2].h }}</td>-->
+                    <!--<td>{{ rowsValues[2].i }}</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<th>{{ rowsValues[3].a }}</th>-->
+                    <!--<td>{{ rowsValues[3].b }}</td>-->
+                    <!--<td>{{ rowsValues[3].c }}</td>-->
+                    <!--<td>{{ rowsValues[3].d }}</td>-->
+                    <!--<td>{{ rowsValues[3].e }}</td>-->
+                    <!--<td>{{ rowsValues[3].f }}</td>-->
+                    <!--<td>{{ rowsValues[3].g }}</td>-->
+                    <!--<td>{{ rowsValues[3].h }}</td>-->
+                    <!--<td>{{ rowsValues[3].i }}</td>-->
+                <!--</tr>-->
+                <!--</tbody>-->
+            <!--</table>-->
+        <!--</div>-->
+    </div>
+
+    <!--<div class="scrolling-table" style="width: 840px; height: 300px">-->
+        <!--<table ng-controller="TableCtrl" class="standard">-->
+            <!--<thead>-->
+            <!--<tr>-->
+                <!--<th ng-repeat="columnsName in columnsNames" ng-bind="columnsName.name"></th>-->
+            <!--</tr>-->
+            <!--</thead>-->
+            <!--<tbody>-->
+            <!--<tr ng-repeat="rowsValue in rowsValues">-->
+                <!--<td ng-repeat="columnsName in columnsNames" ng-bind="rowsValue[columnsName.id]"></td>-->
+            <!--</tr>-->
+            <!--</tbody>-->
+            <!--<tfoot>-->
+            <!--<tr>-->
+                <!--<td colspan={{columnsNames.length-1}}>-->
+                    <!--Total: <span>{{rowsValues.length}}</span>-->
+                <!--</td>-->
+                <!--<td></td>-->
+            <!--</tr>-->
+            <!--</tfoot>-->
+        <!--</table>-->
+    <!--</div>-->
+
+    <!--<h2 class="vlead-2 vtrail-1"><a name="scrollingFilters"></a>With filters</h2>-->
+    <!--<div class="scrolling-table" style="width: 840px; height: 300px">-->
+    <!--<table ng-controller="TableCtrl" class="standard">-->
+    <!--<thead>-->
+    <!--<tr>-->
+    <!--<th class="has-filter" ng-repeat="columnsName in columnsNames" ng-bind="columnsName.name"></th>-->
+    <!--</tr>-->
+    <!--<tr class="filters">-->
+    <!--<th ng-repeat="columnsName in columnsNames">-->
+    <!--<select placeholder="Filter...">-->
+    <!--<option value="0">First Item</option>-->
+    <!--<option value="1">Second Item</option>-->
+    <!--<option value="2">Third Item</option>-->
+    <!--<option value="3">Fourth Item</option>-->
+    <!--<option value="4">Fifth Item</option>-->
+    <!--</select>-->
+    <!--</th>-->
+    <!--</tr>-->
+    <!--</thead>-->
+    <!--<tbody>-->
+    <!--<tr ng-repeat="rowsValue in rowsValues">-->
+    <!--<td ng-repeat="columnsName in columnsNames" ng-bind="rowsValue[columnsName.id]"></td>-->
+    <!--</tr>-->
+    <!--</tbody>-->
+    <!--<tfoot>-->
+    <!--<tr>-->
+    <!--<td colspan={{columnsNames.length-1}}>-->
+    <!--<span class="filter-results"><span class="filter-icon"></span> Results: TODO</span>-->
+    <!--Total: <span>{{rowsValues.length}}</span>-->
+    <!--</td>-->
+    <!--<td></td>-->
+    <!--</tr>-->
+    <!--</tfoot>-->
+    <!--</table>-->
+    <!--</div>-->
