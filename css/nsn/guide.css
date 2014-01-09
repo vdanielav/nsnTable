@@ -1,0 +1,586 @@
+/*body > .content*/
+/*{*/
+    /*margin-left: 250px;*/
+   /*height: 100%;*/
+/*}*/
+
+/*body > .content iframe*/
+/*{*/
+    /*border: 0;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+/*}*/
+
+/*body > .table-of-contents*/
+/*{*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*width: 210px;*/
+    /*padding: 0 20px;*/
+    /*height: 100%;*/
+    /*background-color: #fff;*/
+    /*overflow: auto;*/
+	/*border-right: 1px solid #efefef;*/
+/*}*/
+
+
+/*.guide-chart*/
+/*{*/
+    /*display: inline-block;*/
+    /*margin: 1em 0;*/
+/*}*/
+
+/*.guide-chart thead,*/
+/*.guide-chart tbody th*/
+/*{*/
+    /*background-color: transparent;*/
+/*}*/
+
+/*.guide-chart tbody th*/
+/*{*/
+    /*text-align: right;*/
+/*}*/
+
+/*.guide-chart th,*/
+/*.guide-chart td*/
+/*{*/
+    /*padding: 15px;*/
+    /*text-align: center;*/
+/*}*/
+
+/*.guide-chart.text-left th,*/
+/*.guide-chart.text-left td*/
+/*{*/
+    /*text-align: left;*/
+/*}*/
+
+/*.guide-chart th ul,*/
+/*.guide-chart td ul*/
+/*{*/
+    /*text-align: left;*/
+/*}*/
+
+/*.guide-chart th*/
+/*{*/
+    /*font-family: "Museo Sans 500";*/
+    /*color: #333;*/
+    /*font-size: 16px;*/
+/*}*/
+
+/*.guide-chart tbody td*/
+/*{*/
+    /*background-color: #E7E7E7;*/
+/*}*/
+
+/*.guide-chart.primary tbody.orange-bar td*/
+/*{*/
+    /*background: transparent url(../../images/orange-bar.png) repeat-x left top;*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+/*}*/
+
+/*.secondary*/
+/*{*/
+    /*color: #fff;*/
+/*}*/
+
+/*td.secondary,*/
+/*.guide-chart.secondary tbody td*/
+/*{*/
+    /*background: transparent url(../../images/dark-background.png) repeat left top;*/
+/*}*/
+
+/*.tree.example*/
+/*{*/
+    /*padding: 20px;*/
+    /*background-color: #fff;*/
+/*}*/
+
+/*code*/
+/*{*/
+	/*font-family: monospace;*/
+	/*color: black;*/
+	/*line-height: 16px;*/
+/*}*/
+
+/*.example,*/
+/*.example .example-live*/
+/*{*/
+	/*margin: 15px 0;*/
+/*}*/
+
+/*.example .example-content*/
+/*{*/
+	/*background-color: #fff;*/
+	/*padding: 15px 15px 15px 0;*/
+	/*border-radius: 15px;*/
+	/*margin: 15px 0;*/
+/*}*/
+
+/*.example .example-content .syntaxhighlighter*/
+/*{*/
+	/*margin: 0 !important;*/
+/*}*/
+
+/*.guide-dark*/
+/*{*/
+	/*background-color: #404040;*/
+	/*padding: 20px;*/
+/*}*/
+
+/*.guide-orange*/
+/*{*/
+	/*background-color: #F47500;*/
+	/*padding: 20px;*/
+/*}*/
+
+/*.guide-purple*/
+/*{*/
+	/*background-color: #6E0673;*/
+	/*padding: 20px;*/
+/*}*/
+
+/*.colors*/
+/*{*/
+	/*background-color: #fff;*/
+	/*padding: 24px;*/
+/*}*/
+
+/*.colors label*/
+/*{*/
+	/*display: block;*/
+	/*line-height: 18px;*/
+	/*margin-bottom: 16px;*/
+/*}*/
+
+/*.colors .small label*/
+/*{*/
+	/*font-size: 12px;*/
+	/*margin-bottom: 0;*/
+/*}*/
+
+/*.colors .color-box*/
+/*{*/
+	/*width: 180px;*/
+	/*height: 180px;*/
+	/*margin-bottom: 16px;*/
+/*}*/
+
+/*.colors .color-box.orange-deep*/
+/*{*/
+	/*background-color: #F47500;*/
+/*}*/
+
+/*.colors .color-box.yellow*/
+/*{*/
+	/*background-color: #FFCC00;*/
+/*}*/
+
+/*.colors .color-box.purple*/
+/*{*/
+	/*background-color: #6E0673;*/
+/*}*/
+
+/*.colors .color-box.orange-gradient*/
+/*{*/
+	/*background: -webkit-linear-gradient(#FA8900, #F47500);*/
+	/*background: -moz-linear-gradient(#FA8900, #F47500);*/
+/*}*/
+
+/*.colors .color-box.yellow-gradient*/
+/*{*/
+	/*background: -webkit-linear-gradient(#FFF200, #F9CF00);*/
+	/*background: -moz-linear-gradient(#FFF200, #F9CF00);*/
+/*}*/
+
+/*.colors .color-box.purple-gradient*/
+/*{*/
+	/*background: -webkit-linear-gradient(#8F428D, #5C225C);*/
+	/*background: -moz-linear-gradient(#8F428D, #5C225C);*/
+/*}*/
+
+/*.colors .color-box.global-gray*/
+/*{*/
+	/*background-color: #474747;*/
+/*}*/
+/*.colors .color-box.dark-gray*/
+/*{*/
+	/*background-color: #1b1b1b;*/
+/*}*/
+/*.colors .color-box.medium-gray*/
+/*{*/
+	/*background-color: #666;*/
+/*}*/
+/*.colors .color-box.light-gray*/
+/*{*/
+	/*background-color: #aaa;*/
+/*}*/
+/*.colors .color-box.white*/
+/*{*/
+	/*width: 178px;*/
+	/*height: 178px;*/
+	/*border: 1px solid #666;*/
+	/*background-color: #fff;*/
+/*}*/
+
+/*.colors .color-box.background-gradient*/
+/*{*/
+	/*background: -webkit-linear-gradient(#D8DAE0, #EFEFEF);*/
+	/*background: -moz-linear-gradient(#D8DAE0, #EFEFEF);*/
+/*}*/
+
+/*.colors .color-box.background-insight-gradient*/
+/*{*/
+	/*background: -webkit-linear-gradient(#CFD0D9, #B8B8BE);*/
+	/*background: -moz-linear-gradient(#CFD0D9, #B8B8BE);*/
+/*}*/
+
+/*.colors .color-box.selection-orange*/
+/*{*/
+	/*background-color: #F47500;*/
+/*}*/
+/*.colors .color-box.info-gray*/
+/*{*/
+	/*background-color: #666;*/
+/*}*/
+/*.colors .color-box.alert-red*/
+/*{*/
+	/*background-color: #BE0006;*/
+/*}*/
+/*.colors .color-box.warning-yellow*/
+/*{*/
+	/*background-color: #FFCC00;*/
+/*}*/
+/*.colors .color-box.ok-green*/
+/*{*/
+	/*background-color: #3DAA00;*/
+/*}*/
+
+/*.colors.visualization table*/
+/*{*/
+	/*table-layout: fixed;*/
+/*}*/
+
+/*.colors.visualization table td*/
+/*{*/
+	/*width: 75px;*/
+	/*height: 60px;*/
+	/*line-height: 1px;*/
+	/*padding-bottom: 13px;*/
+	/*text-align: center;*/
+	/*vertical-align: middle;*/
+/*}*/
+
+/*.colors.visualization.palette table td*/
+/*{*/
+	/*width: 84px;*/
+	/*padding-bottom: 18px;*/
+/*}*/
+
+/*.colors.visualization table tr:last-child td*/
+/*{*/
+	/*padding-bottom: 0;*/
+/*}*/
+
+/*.colors.visualization table td .color,*/
+/*.colors.visualization table td .bar-color*/
+/*{*/
+	/*width: 60px;*/
+	/*height: 60px;*/
+	/*display: inline-block;*/
+	/*margin: 0;*/
+/*}*/
+
+/*.colors.visualization table td .bar-color*/
+/*{*/
+	/*position: relative;*/
+/*}*/
+
+/*.colors.visualization table td .bar-color .left,*/
+/*.colors.visualization table td .bar-color .right*/
+/*{*/
+	/*width: 30px;*/
+	/*height: 100%;*/
+	/*position: absolute;*/
+/*}*/
+
+/*.colors.visualization table td .bar-color .left*/
+/*{*/
+	/*top: 0;*/
+	/*left: 0;*/
+	/*-webkit-border-top-left-radius: 6px;*/
+	/*-moz-border-radius-topleft: 6px;*/
+	/*border-top-left-radius: 6px;*/
+/*}*/
+
+/*.colors.visualization table td .bar-color .right*/
+/*{*/
+	/*top: 0;*/
+	/*right: 0;*/
+	/*-webkit-border-top-right-radius: 6px;*/
+	/*-moz-border-radius-topright: 6px;*/
+	/*border-top-right-radius: 6px;*/
+/*}*/
+
+/*.colors.visualization table td .bar-color.one .left*/
+/*{*/
+	/*background-color: #FFCC00;*/
+/*}*/
+
+/*.colors.visualization table td .bar-color.one .right*/
+/*{*/
+	/*background-color: #FFB70C;*/
+/*}*/
+
+/*.colors.visualization table td .bar-color.two .left*/
+/*{*/
+	/*background-color: #FF9900;*/
+/*}*/
+
+/*.colors.visualization table td .bar-color.two .right*/
+/*{*/
+	/*background-color: #FF7505;*/
+/*}*/
+
+/*.colors.visualization table td .bar-color.three .left*/
+/*{*/
+	/*background-color: #773676;*/
+/*}*/
+
+/*.colors.visualization table td .bar-color.three .right*/
+/*{*/
+	/*background-color: #660066;*/
+/*}*/
+
+/*.colors.visualization table td .bar-color.four .left*/
+/*{*/
+	/*background-color: #999;*/
+/*}*/
+
+/*.colors.visualization table td .bar-color.four .right*/
+/*{*/
+	/*background-color: #838383;*/
+/*}*/
+
+/*.colors.visualization table td .bar-color.five .left*/
+/*{*/
+	/*background-color: #666;*/
+/*}*/
+
+/*.colors.visualization table td .bar-color.five .right*/
+/*{*/
+	/*background-color: #4e4e4e;*/
+/*}*/
+
+/*.colors.visualization table td .bar-color.six .left*/
+/*{*/
+	/*background-color: #333;*/
+/*}*/
+
+/*.colors.visualization table td .bar-color.six .right*/
+/*{*/
+	/*background-color: #1a1a1a;*/
+/*}*/
+
+/*.colors.visualization table td .bar-color.seven .left*/
+/*{*/
+	/*background-color: #97233f;*/
+/*}*/
+
+/*.colors.visualization table td .bar-color.seven .right*/
+/*{*/
+	/*background-color: #811831;*/
+/*}*/
+
+/*.colors.visualization table td .bar-color.eight .left*/
+/*{*/
+	/*background-color: #33cc33;*/
+/*}*/
+
+/*.colors.visualization table td .bar-color.eight .right*/
+/*{*/
+	/*background-color: #01c00b;*/
+/*}*/
+
+/*.colors.visualization table td .color.one*/
+/*{*/
+	/*background-color: #FFCC00;*/
+/*}*/
+
+/*.colors.visualization table td .color.two*/
+/*{*/
+	/*background-color: #FF9900;*/
+/*}*/
+
+/*.colors.visualization table td .color.three*/
+/*{*/
+	/*background-color: #773676;*/
+/*}*/
+
+/*.colors.visualization table td .color.four*/
+/*{*/
+	/*background-color: #999;*/
+/*}*/
+
+/*.colors.visualization table td .color.five*/
+/*{*/
+	/*background-color: #666;*/
+/*}*/
+
+/*.colors.visualization table td .color.six*/
+/*{*/
+	/*background-color: #333;*/
+/*}*/
+
+/*.colors.visualization table td .color.seven*/
+/*{*/
+	/*background-color: #97233f;*/
+/*}*/
+
+/*.colors.visualization table td .color.eight*/
+/*{*/
+	/*background-color: #33cc33;*/
+/*}*/
+
+/*.colors.visualization table td .color.nine*/
+/*{*/
+	/*background-color: #ffe066;*/
+/*}*/
+
+/*.colors.visualization table td .color.ten*/
+/*{*/
+	/*background-color: #ffc266;*/
+/*}*/
+
+/*.colors.visualization table td .color.eleven*/
+/*{*/
+	/*background-color: #a366a3;*/
+/*}*/
+
+/*.colors.visualization table td .color.twelve*/
+/*{*/
+	/*background-color: #c2c2c2;*/
+/*}*/
+
+/*.colors.visualization table td .color.thirteen*/
+/*{*/
+	/*background-color: #c17b8c;*/
+/*}*/
+
+/*.colors.visualization table td .color.fourteen*/
+/*{*/
+	/*background-color: #85e085;*/
+/*}*/
+
+/*.colors.visualization table td .color.fifteen*/
+/*{*/
+	/*background-color: #fff0b2;*/
+/*}*/
+
+/*.colors.visualization table td .color.sixteen*/
+/*{*/
+	/*background-color: #ffe0b2;*/
+/*}*/
+
+/*.colors.visualization table td .color.seventeen*/
+/*{*/
+	/*background-color: #d1b2d1;*/
+/*}*/
+
+/*.colors.visualization table td .color.eighteen*/
+/*{*/
+	/*background-color: #e0e0e0;*/
+/*}*/
+
+/*.colors.visualization table td .color.nineteen*/
+/*{*/
+	/*background-color: #e0bdc5;*/
+/*}*/
+
+/*.colors.visualization table td .color.twenty*/
+/*{*/
+	/*background-color: #c1f0c1;*/
+/*}*/
+
+/*.colors.visualization table td .color.gradient-one*/
+/*{*/
+	/*background: -webkit-linear-gradient(left, #FFCC00, #FFB70C);*/
+	/*background: -moz-linear-gradient(left, #FFCC00, #FFB70C);*/
+/*}*/
+
+/*.colors.visualization table td .color.gradient-two*/
+/*{*/
+	/*background: -webkit-linear-gradient(left, #FF9900, #FF7505);*/
+	/*background: -moz-linear-gradient(left, #FF9900, #FF7505);*/
+/*}*/
+
+/*.colors.visualization table td .color.gradient-three*/
+/*{*/
+	/*background: -webkit-linear-gradient(left, #773676, #660066);*/
+	/*background: -moz-linear-gradient(left, #773676, #660066);*/
+/*}*/
+
+/*.colors.visualization table td .color.gradient-four*/
+/*{*/
+	/*background: -webkit-linear-gradient(left, #FFE066, #E8C262);*/
+	/*background: -moz-linear-gradient(left, #FFE066, #E8C262);*/
+/*}*/
+
+/*.colors.visualization table td .color.gradient-five*/
+/*{*/
+	/*background: -webkit-linear-gradient(left, #FFC266, #F0A860);*/
+	/*background: -moz-linear-gradient(left, #FFC266, #F0A860);*/
+/*}*/
+
+/*.colors.visualization table td .color.gradient-six*/
+/*{*/
+	/*background: -webkit-linear-gradient(left, #A366A3, #88558A);*/
+	/*background: -moz-linear-gradient(left, #A366A3, #88558A);*/
+/*}*/
+
+/*.colors.visualization table td .color.gradient-seven*/
+/*{*/
+	/*background: -webkit-linear-gradient(left, #FFF0B2, #E8DC98);*/
+	/*background: -moz-linear-gradient(left, #FFF0B2, #E8DC98);*/
+/*}*/
+
+/*.colors.visualization table td .color.gradient-eight*/
+/*{*/
+	/*background: -webkit-linear-gradient(left, #97233F, #811831);*/
+	/*background: -moz-linear-gradient(left, #97233F, #811831);*/
+/*}*/
+
+/*.colors.visualization table td .color.gradient-nine*/
+/*{*/
+	/*background: -webkit-linear-gradient(left, #33CC33, #01C00B);*/
+	/*background: -moz-linear-gradient(left, #33CC33, #01C00B);*/
+/*}*/
+
+/*.colors.visualization table td .color.gradient-ten*/
+/*{*/
+	/*background: -webkit-linear-gradient(left, #999, #838383);*/
+	/*background: -moz-linear-gradient(left, #999, #838383);*/
+/*}*/
+
+/*.colors.visualization table td .color.gradient-eleven*/
+/*{*/
+	/*background: -webkit-linear-gradient(left, #666, #4E4E4E);*/
+	/*background: -moz-linear-gradient(left, #666, #4E4E4E);*/
+/*}*/
+
+/*.colors.visualization table td .color.gradient-twelve*/
+/*{*/
+	/*background: -webkit-linear-gradient(left, #333, #1A1A1A);*/
+	/*background: -moz-linear-gradient(left, #333, #1A1A1A);*/
+/*}*/
+
+/*.important*/
+/*{*/
+	/*background-color: #FC0;*/
+	/*padding: 10px;*/
+	/*margin: 0 -10px;*/
+	/*color: #333;*/
+/*}*/
