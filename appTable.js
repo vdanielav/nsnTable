@@ -4,7 +4,7 @@ angular.module("nsnTable", [])
     .directive('nsnTable', function () {
         return {
             restrict: 'E',
-            templateUrl: 'templates/table.html',
+            templateUrl: '../bower_components/nsnTable/templates/table.html',
             scope: {
                 filejson: "@"
 //                title: "accessor" // recebe o do seu pai, com o msm nome title...

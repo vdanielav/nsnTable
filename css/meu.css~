@@ -1,6 +1,6 @@
 .panel
 {
-    background: transparent url(../bower_components/nsnTable/images/panel-white.png) no-repeat right top;
+    background: transparent url(../images/panel-white.png) no-repeat right top;
 }
 
 /* Data tables */
@@ -103,7 +103,7 @@ table tbody tr td:last-child
     -moz-border-radius-bottomleft: 4px;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
-    background-image: url(../bower_components/nsnTable/images/datatables-divider-selected.png);
+    background-image: url(../images/datatables-divider-selected.png);
 }
 
 
@@ -136,14 +136,14 @@ table tbody tr td:last-child
 /*table.data.divided th,*/
 /*table.data.divided td*/
 /*{*/
-    /*background: url(../bower_components/nsnTable/images/datatables-divider.png) repeat-x left bottom;*/
+    /*background: url(../images/datatables-divider.png) repeat-x left bottom;*/
 /*}*/
 
 /*table.data.divided th.selected,*/
 /*table.data.divided td.selected,*/
 /*table.data.divided tr.selected*/
 /*{*/
-    /*background-image: url(../bower_components/nsnTable/images/datatables-divider-selected.png);*/
+    /*background-image: url(../images/datatables-divider-selected.png);*/
 /*}*/
 
 .nsnTable {
